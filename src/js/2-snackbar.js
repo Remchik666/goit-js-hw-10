@@ -10,7 +10,7 @@ form.addEventListener('submit', event => {
     const delay = formData.get('delay'); 
     const state = formData.get('state'); 
 
-    if (!delay || !state) { 
+    if (!delay || !state || delay == '0') { 
         iziToast.error({
             title: '❌ Error',
             message: 'Введіть затримку',
