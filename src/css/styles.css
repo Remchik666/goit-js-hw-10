@@ -12,7 +12,173 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+
+.back-link {
+  margin-bottom: 20px;
+}
+
+#datetime-picker {
+  border-radius: 4px;
+  width: 272px;
+  height: 24px;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  transition: color ease-in 250ms, background-color ease-in 250ms, border ease-in 250ms;
+}
+
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+
+#datetime-picker:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+
+#datetime-picker:disabled {
+  background-color: #fafafa;
+  color: #808080;
+  cursor: default;
+}
+
+.datetime-picker-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-bottom: 32px;
+  transition: color ease-in 250ms, background-color ease-in 250ms;
+}
+
+.datetime-picker-btn:hover {
+  background-color: #6c8cff;
+}
+
+.datetime-picker-btn:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: default;
+}
+
+.timer {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 76px;
+  height: 72px;
+}
+
+.value {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* ----------------------------------------------------- */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  height: 100%;
+}
+
+.delay-lable {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-bottom: 16px;
+}
+
+.delay-input {
+  display: block;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 326px;
+  height: 22px;
+  padding: 8px 16px;
+  transition: border ease-out 250ms;
+}
+
+.delay-input:hover {
+  border: 1px solid #000;
+}
+
+.delay-input:active {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 24px;
+  transition: stroke ease-out 250ms;
+}
+
+fieldset:hover {
+  stroke: #000;
+}
+
+.radio-lable {
+  margin-right: 48px;
+}
+
+.submit-btn {
+  background-color: #4e75ff;
+  border-radius: 8px;
+  padding: 8px 99px;
+  width: 360px;
+  height: 40px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color ease-out 250ms;
+}
+
+.submit-btn:hover {
+  background-color: #6c8cff;
+}
+
+input[type="radio"] {
+  accent-color: #4a90e2;
+}
